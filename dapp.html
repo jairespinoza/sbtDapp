@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SBT Form</title>
+    <script
+      src="sbtDAPP.js"
+      type="module"
+      src="./ethers-5.6.esm.min.js"
+    ></script>
+  </head>
+  <body>
+    <h1>SBT Golden 1 Proposal Form</h1>
+    <form id="proposal-form">
+      <button id="connect-button">Connect Wallet</button><br />
+      <label for="targets">Targets:</label><br />
+      <input type="text" id="targets" name="targets" /><br />
+      <label for="values">Values:</label><br />
+      <input type="text" id="values" name="values" /><br />
+      <label for="signatures">Signatures:</label><br />
+      <input type="text" id="signatures" name="signatures" /><br />
+      <label for="calldatas">Calldatas:</label><br />
+      <input type="text" id="calldatas" name="calldatas" /><br />
+      <label for="description">Description:</label><br />
+      <input
+        style="height: 200px; width: 400px"
+        type="text"
+        id="description"
+        name="description"
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p id="submit-button"></p>
+  </body>
+</html>
